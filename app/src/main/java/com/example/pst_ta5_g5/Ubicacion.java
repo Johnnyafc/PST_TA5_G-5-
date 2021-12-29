@@ -9,6 +9,7 @@ public class Ubicacion {
         this.longitud=longitud;
     }
     public static double calcularDistancia(Ubicacion origen, Ubicacion destino){
+        System.out.println("Estoy en ubicacion");
         double dlat=origen.latitud-destino.latitud;
         double dlong=origen.longitud- destino.longitud;
         double a=Math.pow(Math.sin(Math.toRadians(dlat)/2),2)+
